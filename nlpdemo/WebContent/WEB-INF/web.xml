@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>nlpdemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>WordTokenizationTest</servlet-name>
+		<servlet-class>in.techieme.servlets.WordTokenizationTestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WordTokenizationTest</servlet-name>
+		<url-pattern>/testWordTokenize</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SentenceSegmentation</servlet-name>
+		<servlet-class>in.techieme.servlets.SentenceSegmentationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SentenceSegmentation</servlet-name>
+		<url-pattern>/testSentenceSegmentation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SpellingCorrection</servlet-name>
+		<servlet-class>in.techieme.servlets.SpellingCorrectionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SpellingCorrection</servlet-name>
+		<url-pattern>/spellCorrect</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddToDictionary</servlet-name>
+		<servlet-class>in.techieme.servlets.AddToDictionaryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddToDictionary</servlet-name>
+		<url-pattern>/addToDictionary</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SentenceCreation</servlet-name>
+		<servlet-class>in.techieme.servlets.SentenceCreationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SentenceCreation</servlet-name>
+		<url-pattern>/sentenceCreation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SentimentAnalysis</servlet-name>
+		<servlet-class>in.techieme.servlets.SentimentAnalysisServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SentimentAnalysis</servlet-name>
+		<url-pattern>/sentimentAnalysis</url-pattern>
+	</servlet-mapping>
+</web-app>

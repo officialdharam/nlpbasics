@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+<style type="text/css">
+body {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+#navbar-collapse {
+	color: white;
+}
+</style>
+
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="cp-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">NLP Demo</a>
+			</div>
+			<!-- Navbar header ends-->
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#textProcessing">Text Processing</a></li>
+					<li><a href="#languageModeling">Language Modeling</a></li>
+					<li><a href="#textClassification">Text Classification</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end container -->
+	</nav>
+	<!-- Navbar ends -->
+	<div class="jumbotron">
+		<div class="container text-center">
+			<img class="img-responsive" src="images/logo.png">
+			 <h1>NLP Demo @ Thoughtworks</h1> 
+			<p>Presenters</p>
+			<ul class="list-unstyled">
+				<li>Vanya Seth</li> 
+				<li>Dharmendra Prasad - admin@techieme.in</li>
+			</ul>
+			<div class="btn-group">
+				<a href="#textProcessing" class="btn btn-lg btn-success">Text
+					Processing</a> <a href="#languageModeling"
+					class="btn btn-lg btn-danger">Language Modeling</a> <a
+					href="#textClassification" class="btn btn-lg btn-primary">Text
+					Classification</a>
+			</div>
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- ends jumbotron -->
+
+	<div class="container">
+		<section>
+			<div class="page-header" id="textProcessing">
+				<h2>Text Processing</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<blockquote>
+						<p>Word Tokenization</p>
+					</blockquote>
+					<div class="form-group">
+						<textarea class="form-control" id="textToTokenize"
+							name="textToTokenize" placeholder="Text to Tokenize"></textarea>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary" id="spaceTokenizer">Tokenize
+							By Space</button>
+						<button class="btn btn-lg btn-info" id="splTokenizer">Normalize
+							Special Chars</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<blockquote>
+						<p>Sentence Segmentation</p>
+					</blockquote>
+					<div class="form-group">
+						<textarea class="form-control" id="paragraphToSegment"
+							placeholder="Paragraph for Sentence Segmentation"></textarea>
+					</div>
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary" id="eosSegm">EOS
+							Segmentation</button>
+						<button class="btn btn-lg btn-info" id="dtSegm">Decision
+							Tree Segmentation</button>
+					</div>
+				</div>
+
+			</div>
+			<!-- end row -->
+		</section>
+	</div>
+	<!-- container -->
+
+	<div class="container">
+		<section>
+			<div class="page-header" id="languageModeling">
+				<h2>Language Modeling</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<blockquote>
+						<p>Sentence Creation</p>
+					</blockquote>
+
+					<!-- <textarea class="form-control" id="sentenceCreation"
+						placeholder="Space Separated Words"></textarea> -->
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary" id="storyWritingBtn">Story
+							Writing</button>
+						<!-- <button class="btn btn-lg btn-info" id="phraseRearrangementBtn">Phrase
+							Rearrangment</button> -->
+					</div>
+				</div>
+				<div class="col-md-6">
+					<blockquote>
+						<p>Spelling Correction</p>
+					</blockquote>
+
+					<textarea class="form-control" id="spellingCorrectionText"
+						placeholder="Sentence with wrong words"></textarea>
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary" id="spellErrors">Non
+							Word Error Detection</button>
+					</div>
+				</div>
+			</div>
+			<!-- end row -->
+		</section>
+	</div>
+
+
+	<div class="container">
+		<section>
+			<div class="page-header" id="textClassification">
+				<h2>Text Classification</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<blockquote>
+						<p>Spam Detection</p>
+					</blockquote>
+					<textarea class="form-control" id="mailContent"
+						placeholder="Mail Content"></textarea>
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary">Detect Spam</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<blockquote>
+						<p>Sentiment Analysis</p>
+					</blockquote>
+					<textarea class="form-control" id="reviewContent"
+						placeholder="Review Content"></textarea>
+					<div class="btn-group">
+						<button class="btn btn-lg btn-primary" id="movieReviewBtn">Movie
+							Review</button>
+						<button class="btn btn-lg btn-info" id="headlineClassification">Headline
+							Classification</button>
+						<!-- <button class="btn btn-lg btn-success">Generic Sentiment</button> -->
+					</div>
+				</div>
+			</div>
+			<!-- end row -->
+		</section>
+	</div>
+	<nav class="navbar navbar-inverse navbar-fixed-bottom" id="cp-navbar">
+		<div class="container">
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<p>Copyright &copy; 2016 Techie Me</p>
+			</div>
+		</div>
+		<!-- end container -->
+	</nav>
+	<!-- Navbar ends -->
+
+
+	<!-- faq section ends-->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+	<script src="js/nlp.js"></script>
+</body>
+</html>
