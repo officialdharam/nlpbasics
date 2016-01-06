@@ -173,6 +173,16 @@ $(document).ready(function() {
 		});
 	}
 	
+	$("#showDecisionTreeImage").click(function(){
+		 var $textAndPic = $('<div></div>');
+        $textAndPic.append('<img src="./images/decisiontree.png" />');
+        
+        BootstrapDialog.show({
+            title: 'Decision Tree for Sentence Segmentation',
+            size: BootstrapDialog.SIZE_WIDE,
+            message: $textAndPic,	           
+        });
+	});
 	
 	makePOSTCall = function(url, data, handler) {
 
