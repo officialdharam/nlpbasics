@@ -183,6 +183,17 @@ $(document).ready(function() {
             message: $textAndPic,	           
         });
 	});
+	$("#showLM").click(function(){
+		 var $textAndPic = $('<div></div>');
+       $textAndPic.append('<img src="./images/lm.png" />');
+       
+       BootstrapDialog.show({
+           title: 'Interesting Facts',
+           size: BootstrapDialog.SIZE_WIDE,
+           message: $textAndPic,	           
+       });
+	});
+	
 	
 	makePOSTCall = function(url, data, handler) {
 
