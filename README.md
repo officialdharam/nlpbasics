@@ -20,4 +20,13 @@ It uses Naive Bayes Algorithm with Laplace's Add one Smoothing. The code is gene
 
 You can alternatively write a small client for your own domain and supply training files. For a sample, check the client in.techieme.nlp.sentimentanalysis.MovieReviewClassification.java
 
+# Disclaimer
+This work is just for demo purpose and guarantees no accuracy for a commercial application. This is used to explain NLP as a concept to beginners. 
+
+# Contribution
+If you are planning to contribute to improve this project as a beginner then please contact me.
+
+# License
+Everything in this repo is free to use, distribute and edit without any permission from me. 
+
 
