@@ -1,0 +1,31 @@
+<s> i am a good boy </s>
+<s> i am going to the new year party </s>
+<s> i am going for a walk </s>
+<s> i am going away </s>
+<s> i am working as a principal software engineer </s>
+<s> i am working with progress software </s>
+<s> i am working for the go green initiative </s>
+<s> i am good at computer games </s>
+<s> i am good at fishing </s>
+<s> i am good for lot of work </s>
+<s> i was waiting for you at the theatre </s>
+<s> i was waiting for the election results </s>
+<s> i was waiting near the tea shop </s>
+<s> i have been working over the weekends for a month now </s>
+<s> i have been playing outdoor games for years </s>
+<s> i have been practising yoga for few months now </s>
+<s> january is the first month of the year </s>
+<s> monday is the first working day of the week in india </s>
+<s> there is a software engineer who knows nlp </s>
+<s> there is a good restaurant near my residence <s>
+<s> god is great and so am i </s>
+<s> in god we trust </s>
+<s> its working good </s>
+<s> its a boring day </s>
+<s> fishing is a good sport </s>
+<s> there are beautiful clouds over the mountains </s>
+<s> software must be free <s/>
+<s> we must start working hard to meet the deadline </s>
+<s> the world is a beautiful place </s>
+<s> the world war two caused a lot of deaths </s>
+<s> disney land is a good place to be for a day </s>

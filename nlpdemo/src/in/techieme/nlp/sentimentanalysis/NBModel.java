@@ -129,7 +129,7 @@ public class NBModel {
 	}
 
 	/*
-	 * This method calculates the P(w|c) = (count(w|c) + 1)/ P(c) + |V|).
+	 * This method calculates the P(w|c) = (count(w|c) + 1)/ count(c) + |V|).
 	 * Basically it is the conditional probability of a word given a class.
 	 */
 	private void calculateTokenProbability() {

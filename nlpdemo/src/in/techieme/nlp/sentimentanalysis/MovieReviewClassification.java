@@ -9,8 +9,8 @@ import java.util.Map;
 
 public class MovieReviewClassification {
 
-	static String _fileNamePositive = "C:/WORK_HOME/NLP_COMM_TALK/data/spamdetection/positivereviews.txt";
-	static String _fileNameNegative = "C:/WORK_HOME/NLP_COMM_TALK/data/spamdetection/negativereviews.txt";
+	static String _fileNamePositive = "C:/WORK_HOME/STUDIES/NLP_COMM_TALK/data/spamdetection/positivereviews.txt";
+	static String _fileNameNegative = "C:/WORK_HOME/STUDIES/NLP_COMM_TALK/data/spamdetection/negativereviews.txt";
 
 	static NBModel model = new NBModel();
 
